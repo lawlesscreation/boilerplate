@@ -9,6 +9,8 @@
 // scripts and/or other plugins which may not be closed properly.
 ;(function ($, window, document, undefined) {
 
+    'use strict';
+
     // undefined is used here as the undefined global variable in ECMAScript 3 is
     // mutable (ie. it can be changed by someone else). undefined isn't really being
     // passed in so we can ensure the value of it is truly undefined. In ES5, undefined
@@ -45,6 +47,9 @@
             // and this.options
             // you can add more functions like the one below and
             // call them like so: this.yourOtherFunction(this.element, this.options).
+            
+            var $self = this;
+
         },
         yourOtherFunction: function () {
             // some logic
