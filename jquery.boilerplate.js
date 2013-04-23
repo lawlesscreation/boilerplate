@@ -51,6 +51,10 @@
       var $self = this;
 
       },
+      /*
+      * Explain what the function does
+      * @return boolean/value/?: explain what is returned
+      */
       yourOtherFunction: function () {
         // some logic
       }
