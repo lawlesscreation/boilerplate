@@ -21,9 +21,9 @@
   // minified (especially when both are regularly referenced in your plugin).
 
   // Create the defaults once
-  var pluginName = "defaultPluginName",
+  var plugin_name = "jqueryPluginName",
       defaults = {
-        propertyName: "value"
+        property_name: "value"
       };
 
   // The actual plugin constructor
@@ -35,7 +35,7 @@
     // future instances of the plugin
     this.options = $.extend({}, defaults, options);
     this._defaults = defaults;
-    this._name = pluginName;
+    this._name = plugin_name;
     this.init();
   }
 
